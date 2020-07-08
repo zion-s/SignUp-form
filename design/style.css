@@ -1,0 +1,88 @@
+html, body{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url("./../images/bg-intro-desktop.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;  
+}
+.outer-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.flex-child{
+    flex: 1;
+    padding: 5%;
+}
+.flex-child:first-child{
+    margin-left: 8%;
+    margin-right: 2%;
+}
+.flex-child:last-child{
+    margin-left: 2%;
+    margin-right: 8%;
+    border: 1px solid black;
+}
+
+.message{
+    color: white;
+}
+#big-message{
+    font-size: 250%;
+    font-weight: 700;
+    line-height: 30px;
+}
+#small-message{
+    line-height: 20px;
+}
+
+.info{
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    font-weight: 600;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 7px rgba(0, 0, 0, 0.2);
+}
+
+
+form{
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 7px rgba(0, 0, 0, 0.2);
+}
+input{
+    box-sizing: border-box;
+    width: 100%;
+}
+input[type=submit]{
+    background-color: hsl(154, 59%, 51%);
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 4px rgba(20, 92, 61, 0.658);
+}
