@@ -8,8 +8,9 @@
   
   <title>Frontend Mentor | Intro component with sign up form</title>
 
-  <link rel="stylesheet" type="text/css" href="./design/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/9e9be33d61.js"></script>
+  <link rel="stylesheet" type="text/css" href="./design/style.css">
 
 </head>
 <body>
@@ -28,11 +29,27 @@
       </div><br> 
     
       <form>
-        <input type="text" placeholder="First Name" name="firstName" required><br><br>
-        <input type="text" placeholder="Last Name" name="lastName" required><br><br>
-        <input type="email" placeholder="Email Address" name="emailId" required><br><br>
-        <input type="password" placeholder="Password" name="password" required><br><br>
-        <input type="submit" value="Claim your free trial"><br><br>
+        <div class="field">
+          <input type="text" placeholder="First Name" name="firstName" id="firstName" class="field-box" required>
+          <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+          <p class="error">First Name cannot be empty</p><br><br>
+        </div>
+        <div class="field">
+          <input type="text" placeholder="Last Name" name="lastName" id="lastName" class="field-box" required>
+          <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+          <p class="error">Last Name cannot be empty</p><br><br>
+        </div>
+        <div class="field">
+          <input type="email" placeholder="Email Address" name="emailId" id="email" class="field-box" required>
+          <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+          <p class="error">Looks like this is not an email</p><br><br>
+        </div>
+        <div class="field">
+          <input type="password" placeholder="Password" name="password" id="password" class="field-box" required>
+          <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+          <p class="error">Password cannot be empty</p><br><br>
+        </div>
+        <input type="submit" id="submit" value="Claim your free trial"><br><br>
         
         <p class="terms">By clicking the button, you are agreeing to our <span id="tnc">Terms and Services</span></p>
       </form>
