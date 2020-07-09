@@ -27,7 +27,6 @@ html, body{
 .flex-child:last-child{
     margin-left: 2%;
     margin-right: 8%;
-    border: 1px solid black;
 }
 
 .message{
@@ -54,6 +53,10 @@ html, body{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     box-shadow: 0 7px rgba(0, 0, 0, 0.2);
+}
+#price{
+    color: hsl(246, 25%, 77%);
+    font-weight: 500;
 }
 
 
@@ -85,4 +88,33 @@ input[type=submit]{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     box-shadow: 0 4px rgba(20, 92, 61, 0.658);
+}
+input[type=text], input[type=email], input[type=password]{
+    font-weight: 600;
+    padding: 15px;
+    border: 1px solid rgba(184, 181, 181, 0.507);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus{
+    outline: none;
+    box-shadow: 0 0 1px 1px hsla(249, 10%, 26%, 0.699);
+}
+input[type=submit]:focus{
+    outline: none;
+    box-shadow: 0 4px rgba(20, 92, 61, 0.658);
+    font-size: 101%;
+}
+.terms{
+    font-size: 70%;
+    font-weight: 500;
+    color: rgba(163, 160, 160, 0.733);
+    text-align: center;
+}
+#tnc{
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
 }
